@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fpt-stdd-baselines"
+version = "1.0.0"
+description = "Reproducible baselines for FPT-STDD-2026 thesis-topic duplication detection"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26,<3",
+  "pandas>=2.1,<3",
+  "openpyxl>=3.1,<4",
+  "scikit-learn>=1.4,<2",
+  "sentence-transformers>=3.4,<6",
+  "torch>=2.2",
+  "datasets>=2.18,<5",
+  "accelerate>=0.28,<2",
+  "PyYAML>=6,<7",
+]
+
+[project.scripts]
+fpt-stdd-run = "fpt_stdd.cli:main"
+fpt-stdd-finetune = "fpt_stdd.finetune:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

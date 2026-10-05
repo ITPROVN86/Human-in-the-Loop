@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+logs/
+data/
+results/
+results_v1/
+models/
+results.zip
+results_v1_1_complete.zip
+error_e2_seed_2028.txt
+.pytest_cache/
+

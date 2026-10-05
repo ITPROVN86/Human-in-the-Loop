@@ -1,0 +1,12 @@
+strict_split: data/v1_1/splits/strict_group_split_v1_1.csv
+synthetic: data/v1_1/augmentation/synthetic_duplicate_train_v1_1.csv
+hard_negative: data/v1_1/augmentation/hard_negative_train_v1_1.csv
+protocols: [strict]
+baselines: [sbert]
+text_view: title
+threshold_objective: f1
+seed: 2026
+sbert_model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+batch_size: 32
+device: auto
+output_dir: results/component_ablation

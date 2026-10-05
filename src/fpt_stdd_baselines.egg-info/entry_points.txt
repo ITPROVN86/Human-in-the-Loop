@@ -1,0 +1,3 @@
+[console_scripts]
+fpt-stdd-finetune = fpt_stdd.finetune:main
+fpt-stdd-run = fpt_stdd.cli:main

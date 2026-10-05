@@ -1,0 +1,11 @@
+workbook: data/FPT_STDD_2026_Positive_Augmentation_and_Hard_Negatives_Train_Only.xlsx
+protocols: [strict, temporal]
+baselines: [tfidf, bm25, sbert]
+text_view: title_objectives
+threshold_objective: f1
+seed: 2026
+sbert_model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+batch_size: 32
+device: auto
+output_dir: results/baselines
+
