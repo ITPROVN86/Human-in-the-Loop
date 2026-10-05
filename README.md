@@ -19,7 +19,7 @@ Tài liệu nền:
 - https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 - https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html
 
-## Giao thức khoa học đã cố định
+## Giao thức chọn lọc
 
 1. `Strict_Group_Split` là kết quả chính: train/validation/test không trùng topic.
 2. `Temporal_Split` kiểm tra tổng quát hóa sang FA26.
